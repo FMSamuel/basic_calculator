@@ -29,3 +29,19 @@ function calculate(operation) {
 
     return result;
 }
+
+document.getElementById('addition').addEventListener('click', () => {
+    document.getElementById('result').textContent = `Result: ${calculate('addition')}`;
+});
+
+document.getElementById('subtraction').addEventListener('click', () => {
+    document.getElementById('result').textContent = `Result: ${calculate('subtraction')}`;
+});
+
+document.getElementById('multiplication').addEventListener('click', () => {
+    document.getElementById('result').textContent = `Result: ${calculate('multiplication')}`;
+});
+
+document.getElementById('division').addEventListener('click', () => {
+    document.getElementById('result').textContent = `Result: ${calculate('division')}`;
+});
