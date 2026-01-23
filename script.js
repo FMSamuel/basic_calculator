@@ -6,6 +6,7 @@ function getNumbers() {
 
 function calculate(operation) {
     const { numb1, numb2 } = getNumbers();
+    console.log(numb1);
     let result;
     switch (operation) {
         case 'addition':
