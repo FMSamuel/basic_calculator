@@ -6,7 +6,7 @@ function getNumbers() {
 
 function calculate(operation) {
     const { numb1, numb2 } = getNumbers();
-    console.log(numb1);
+    
     let result;
     switch (operation) {
         case 'addition':
@@ -48,3 +48,5 @@ document.getElementById('multiplication').addEventListener('click', () => {
 document.getElementById('division').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('division')}`;
 });
+
+console.log("Hello");
