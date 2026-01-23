@@ -5,24 +5,24 @@ function getNumbers() {
 }
 
 function calculate(operation) {
-    const { numb1, numb2 } = getNumbers();
+    const { number1, number2 } = getNumbers();
     
     let result;
     switch (operation) {
         case 'addition':
-            result = numb1 + numb2;
+            result = number1 + number2;
             break;
         case 'subtraction':
-            result = numb1 - numb2;
+            result = number1 - number2;
             break;
         case 'multiplication':
-            result = numb1 * numb2;
+            result = number1 * number2;
             break;
         case 'division':
-            if (numb1 >= numb2)
-                result = numb1 / numb2;
+            if (number1 >= number2)
+                result = number1 / number2;
             else
-                result = numb2 / numb1;
+                result = number2 / number1;
             break;
         default:
             result = "Invalid operation";
@@ -35,7 +35,7 @@ document.getElementById('addition').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('addition')}`;
 });
 
-console.log('result');
+//console.log('result');
 
 document.getElementById('subtraction').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('subtraction')}`;
@@ -49,4 +49,4 @@ document.getElementById('division').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('division')}`;
 });
 
-console.log("Hello");
+//console.log("Hello");
