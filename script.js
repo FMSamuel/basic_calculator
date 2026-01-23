@@ -8,16 +8,16 @@ function calculate(operation) {
     const { numb1, numb2 } = getNumbers();
     let result;
     switch (operation) {
-        case "addition":
+        case 'addition':
             result = numb1 + numb2;
             break;
-        case "subtraction":
+        case 'subtraction':
             result = numb1 - numb2;
             break;
-        case "multiplication":
+        case 'multiplication':
             result = numb1 * numb2;
             break;
-        case "division":
+        case 'division':
             if (numb1 >= numb2)
                 result = numb1 / numb2;
             else
@@ -33,6 +33,8 @@ function calculate(operation) {
 document.getElementById('addition').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('addition')}`;
 });
+
+console.log('result');
 
 document.getElementById('subtraction').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('subtraction')}`;
