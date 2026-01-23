@@ -7,7 +7,9 @@ function getNumbers() {
     return { number1, number2 };
 }
 
-function calculate(operation) {
+getNumbers();
+
+/*function calculate(operation) {
     const { number1, number2 } = getNumbers();
     
     let result;
@@ -50,6 +52,6 @@ document.getElementById('multiplication').addEventListener('click', () => {
 
 document.getElementById('division').addEventListener('click', () => {
     document.getElementById('result').textContent = `Result: ${calculate('division')}`;
-});
+});*/
 
 //console.log("Hello");
