@@ -37,7 +37,7 @@ function calculate(operation) {
 }
 
 document.getElementById('addition').addEventListener('click', () => {
-    document.getElementById('result').textContent = `Result: ${calculate('addition')}`;
+    document.getElementById('result').innerHTML = `Result: ${calculate('addition')}`;
 });
 
 //console.log('result');
